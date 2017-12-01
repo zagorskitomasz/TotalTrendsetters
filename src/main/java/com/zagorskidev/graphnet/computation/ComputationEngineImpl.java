@@ -21,7 +21,7 @@ import com.zagorskidev.graphnet.graph.Vertex;
 @Component
 public class ComputationEngineImpl implements ComputationEngine {
 
-	private static final int THRESHOLD_CAP = 50;
+	private static final int THRESHOLD_CAP = 5000;
 	
 	private AtomicBoolean alreadyComputing;
 	
