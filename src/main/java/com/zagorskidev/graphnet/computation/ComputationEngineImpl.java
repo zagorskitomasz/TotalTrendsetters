@@ -21,7 +21,7 @@ import com.zagorskidev.graphnet.graph.Vertex;
 @Component
 public class ComputationEngineImpl implements ComputationEngine {
 
-	private static final int THRESHOLD_CAP = 5000;
+	private static final int THRESHOLD_CAP = 3000;
 	
 	private AtomicBoolean alreadyComputing;
 	
@@ -70,7 +70,7 @@ public class ComputationEngineImpl implements ComputationEngine {
 		initializeAlgorithm();
 
 		int r2Threshold = compDataSet.getThreshold();
-		int r1Threshold = Math.min(initialList.size()/10, THRESHOLD_CAP);
+		int r1Threshold = Math.min(initialList.size()/2, THRESHOLD_CAP);
 		
 		countPreferences();
 		
